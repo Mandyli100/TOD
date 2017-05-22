@@ -1,0 +1,26 @@
+.box250 {width:250px; padding:0 0 15px 0; background:url(box_base.gif) no-repeat left bottom; margin-bottom:10px; }
+.box250 h3 {background:url(box.gif); height:30px; line-height:30px; color:#333; padding:0 15px; margin:0; font-size:12px;}
+.box250 h3.blank {background:url(sbox.gif); height:30px; line-height:30px; color:#333; padding:0 15px; margin:0; font-size:12px;}
+.box250 ul {list-style:none; padding:15px 14px 0 14px; margin:0; width:220px; background:#fff; border:1px solid #d8d9da; border-width:0 1px; height: 310px; }
+.box250 ul li {text-decoration:none; color:#444; padding:2px 0; font-size:11px; border-bottom:1px solid #f0f0f0; word-spacing:-1px;}
+.box250 ul li a {text-decoration:none; color:#048; font-size:12px; font-weight:bold;}
+.box250 ul li a:hover {text-decoration:underline;}
+
+.box250 p {padding:15px 14px 0 14px; margin:0; width:220px; background:#fff; border:1px solid #d8d9da; border-width:0 1px; line-height:1.3em; font-size:11px; color:#444;}
+.box250 p.red {color:#c00;}
+.box250 dl {list-style:none; padding:0 14px; margin:0; width:220px; background:#fff; border:1px solid #d8d9da; border-width:0 1px;}
+.box250 dt {clear:left; padding:10px 0; margin:0; font-size:12px; font-weight:bold; color:#151;}
+.box250 dd {padding:3px 0; margin:0; font-size:11px; line-height:1.2em; color:#444; border-bottom:1px solid #f0f0f0;}
+.box250 dd a {display:block; color:#048; text-decoration:none; width:220px; font-size:12px;}
+.box250 dd a em {color:#666; float:right; font-style:normal; font-size:11px;}
+.box250 dd a:hover {color:#08c; text-decoration:none;}
+
+.box250 table caption {width:250px; background:url(box.gif); height:30px; line-height:30px; color:#333; padding:0; margin:0; font-size:12px; text-align:left; text-indent:15px; font-weight:bold;}
+.box250 table {width:250px; border:1px solid #d8d9da; border-width:0 1px; background:#fff;}
+.box250 table th {padding-top:5px; text-indent:5px; color:#151;}
+.box250 table td {text-indent:5px; color:#444;}
+.box250 table tfoot td {text-align:center; color:#666; font-size:11px; padding-top:10px;}
+
+.box250 form {margin:0;}
+
+.box250 a.bannerad img {display:block; padding-bottom:4px;}

@@ -1,0 +1,79 @@
+<meta http-equiv="cache-control" content="no-cache" />
+<SCRIPT language="JavaScript">
+<!--
+var browserName=navigator.appName; 
+if (browserName=="Netscape")
+{ 
+ document.writeln("<link rel='stylesheet' media='all' type='text/css' href='style/box.css' />");
+}
+else 
+{ 
+ if (browserName=="Microsoft Internet Explorer")
+ {
+  document.writeln("<link rel='stylesheet' media='all' type='text/css' href='style/box1.css' />");
+ }
+ else
+  {
+    document.writeln("<link rel='stylesheet' media='all' type='text/css' href='style/box1.css' />");
+   }
+}
+//-->
+</SCRIPT>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAmTmNQB4qTYq1j5fYmw5zfBRGlbbK0S78Q_3qGXe9YYVtM3tm4hTAJYu-aoxnfw2LnNJgszcnKnz-aw" type="text/javascript"></script>
+
+<link rel="stylesheet" media="all" type="text/css" href="gmap.css" />
+    <script src="geoxml.js" type="text/javascript"></script>
+    <script   type="text/javascript">
+	     //<![CDATA[
+     var gml, mmap;
+     function initMap() {
+
+    mmap=new GMap2(document.getElementById("map"),{draggableCursor: 'crosshair', draggingCursor: 'move'});
+    //mmap.setCenter(new GLatLng(38.928665,-76.926137),12);
+	//mmap.setZoom(12); 
+	mmap.setCenter(new GLatLng(38.928665,-76.926137),11);
+    mmap.addControl(new GLargeMapControl());
+    mmap.addControl(new GMapTypeControl());
+
+	mmap.addControl(new GOverviewMapControl());
+	mmap.setMapType(G_PHYSICAL_MAP);
+	//mmap.setZoom(13);
+    //alert(map.getZoom()); 
+	//mmap.setZoom(11); //this looks a high enough zoom value
+    //mmap.fitBounds(bounds);
+	//mmap.setZoom((mmap.getBoundsZoomLevel(bounds)));
+	//mmap.setCenter(bounds.getCenter());
+	
+    mmap.enableScrollWheelZoom();
+    mmap.enableDoubleClickZoom();
+    mmap.enableContinuousZoom();
+	
+	gml = new GeoXml("gml", mmap, "TOD.kml", {sidebarid:"the_side_bar",iwwidth:250});
+	gml.parse();
+	}
+    //]]>
+    </script>
+
+  </head>
+  <body onLoad="initMap()" onUnload="GUnload()">
+
+        <table border=0 cellpadding="0" cellspacing="0">
+      <tr>
+        <td valign="top" width="240">
+<div class="box250">
+<h3><center>Metro Stations In the County</center></h3><ul>
+<div id="the_side_bar" style="overflow:left; white-space:nowrap;" align="left">
+</div></ul>
+</div>
+        </td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+
+	<td valign="top" align="right">
+              <div id="map" style="width: 700px; height: 520px"></div>
+        </td>
+      </tr>
+
+    </table>
+
+</body>
+</html>

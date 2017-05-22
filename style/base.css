@@ -1,0 +1,44 @@
+
+/* Content
+   -------------------------------- */
+
+#content-wrapper {
+	background: #FFF url('/images/content_bg.png') repeat-y 0 0;
+}
+
+#content {
+	background: url('/images/content_body_bg.png') no-repeat 0 13px;
+	zoom: 1;
+}
+
+.content-top {
+	font-size: 1px;
+	height: 13px;
+	background: url('/images/content_top_bg.png');
+}
+
+.content {
+	padding: 0 3px 0 3px;
+	overflow: hidden;
+}
+
+#content .content {
+	min-height: 380px;
+	background: url('/images/dot.png') repeat-y 203px 0;
+}
+
+#home #content .content,
+#download #content .content,
+#demos #content .content,
+#docs #content .content, 
+#support #content .content,
+#development #content .content, 
+#about #content .content {
+	background: none;
+}
+
+#ie6 #content .content {
+	height: 380px;
+	overflow-y: visible;
+}
+

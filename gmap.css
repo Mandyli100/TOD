@@ -1,0 +1,11 @@
+a { text-decoration:none }
+#the_side_bar li { list-style: none; margin:0px;padding:1px; font-size:  12px; font-family:Arial, Helvetica, sans-serif; margin-top:0px; margin-left:0px; margin-bottom:0px;} 
+#the_side_bar ul { margin-left:0px; padding:0px; }
+	/* Control how "sided out" the tree is */
+#the_side_bar ul  ul , #the_side_bar ul li { margin-left:0px; padding:0px; } 
+	/* Format menu items differently depending on what level of the tree they are in */
+#the_side_bar ul li { font-size:  12px; font-family:Arial, Helvetica, sans-serif }
+#the_side_bar ul li ul li { font-size: 12px; font-family: Arial, Helvetica, sans-serif }
+#the_side_bar ul li ul li ul li { font-size: 12px; }
+#the_side_bar ul li ul li ul li ul li { font-size: 8px; } 
+
